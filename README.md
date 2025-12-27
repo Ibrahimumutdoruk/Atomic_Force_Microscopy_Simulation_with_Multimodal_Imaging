@@ -32,3 +32,23 @@ All simulations are updated interactively.
   - scipy
   - matplotlib
   - tkinter (included with standard Python installations)
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/664f53ae-d5f6-4279-8b11-1461649769be" width="500"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/5ff70d16-1db0-4283-87cd-42b2b8e0d89c" width="500"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/8868ba3f-1ee7-4ea5-a3dc-78b623b57887" width="500"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/b48c0d4e-7f9c-4df9-a582-62491a1a1efe" width="500"/>
+    </td>
+  </tr>
+</table>
+
