@@ -32,6 +32,3 @@ All simulations are updated interactively.
   - scipy
   - matplotlib
   - tkinter (included with standard Python installations)
-##  Contributors
-**Emirhan Garip** – [LinkedIn](https://www.linkedin.com/in/emirhan-garip-776146215/)) 
-**İbrahim Umut Doruk** – [LinkedIn](https://www.linkedin.com/in/ibrahim-umut-doruk-9b1860217/)) 
