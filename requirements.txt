@@ -1,3 +1,4 @@
 numpy
 scipy
 matplotlib
+tkinter (included with standard Python installations)
