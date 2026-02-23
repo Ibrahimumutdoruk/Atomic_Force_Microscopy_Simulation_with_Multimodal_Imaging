@@ -281,9 +281,9 @@ class AFMSimulatorGUI:
     def __init__(self, root):
         self.root = root
         self.root.title('🔬 AFM Simulator - Validated Physics Edition')
-        self.root.geometry('1600x950')
+        self.root.geometry('780x600')
         self.root.configure(bg='#1a1a1a')
-        self.root.minsize(1200, 700)
+        self.root.minsize(780, 600)
         
         self.cantilever_params = CantileverParams()
         self.feedback_params = FeedbackParams()
@@ -295,7 +295,7 @@ class AFMSimulatorGUI:
         self.paned = ttk.PanedWindow(root, orient='horizontal')
         self.paned.pack(fill='both', expand=True, padx=5, pady=5)
         
-        control_container = ttk.Frame(self.paned, width=350)
+        control_container = ttk.Frame(self.paned, width=260)
         self.paned.add(control_container, weight=0)
         
         self.control_notebook = ttk.Notebook(control_container)
@@ -495,7 +495,7 @@ class AFMSimulatorGUI:
 
     def setup_plot_figures(self):
         fig_bg, ax_bg, text_color = '#1a1a1a', '#2b2b2b', 'white'
-        self.fig_main = Figure(figsize=(10, 8), dpi=100, facecolor=fig_bg)
+        self.fig_main = Figure(figsize=(7.6, 5.6), dpi=100, facecolor=fig_bg)
         gs = gridspec.GridSpec(2, 2, figure=self.fig_main, wspace=0.25, hspace=0.3)
         self.ax_surface = self.fig_main.add_subplot(gs[0, 0])
         self.ax_afm = self.fig_main.add_subplot(gs[0, 1])
@@ -510,7 +510,7 @@ class AFMSimulatorGUI:
         self.canvas_main = FigureCanvasTkAgg(self.fig_main, master=self.plot_tab_main)
         self.canvas_main.get_tk_widget().pack(fill='both', expand=True)
         
-        self.fig_dynamics = Figure(figsize=(10, 8), dpi=100, facecolor=fig_bg)
+        self.fig_dynamics = Figure(figsize=(7.6, 5.6), dpi=100, facecolor=fig_bg)
         self.fig_dynamics.subplots_adjust(left=0.12, right=0.95, top=0.92, bottom=0.1)
         self.ax_force = self.fig_dynamics.add_subplot(111)
         self.ax_force.set_facecolor(ax_bg)
@@ -519,7 +519,7 @@ class AFMSimulatorGUI:
         self.canvas_dynamics = FigureCanvasTkAgg(self.fig_dynamics, master=self.plot_tab_dynamics)
         self.canvas_dynamics.get_tk_widget().pack(fill='both', expand=True)
         
-        self.fig_analysis = Figure(figsize=(10, 8), dpi=100, facecolor=fig_bg)
+        self.fig_analysis = Figure(figsize=(7.6, 5.6), dpi=100, facecolor=fig_bg)
         gsA = gridspec.GridSpec(2, 2, figure=self.fig_analysis, wspace=0.25, hspace=0.35)
         self.ax_metrics = self.fig_analysis.add_subplot(gsA[0, 0])
         self.ax_psd = self.fig_analysis.add_subplot(gsA[0, 1])
@@ -532,7 +532,7 @@ class AFMSimulatorGUI:
         self.canvas_analysis = FigureCanvasTkAgg(self.fig_analysis, master=self.plot_tab_analysis)
         self.canvas_analysis.get_tk_widget().pack(fill='both', expand=True)
         
-        self.fig_3d = Figure(figsize=(10, 8), dpi=100, facecolor=fig_bg)
+        self.fig_3d = Figure(figsize=(7.6, 5.6), dpi=100, facecolor=fig_bg)
         self.canvas_3d = FigureCanvasTkAgg(self.fig_3d, master=self.plot_tab_3d)
         self.canvas_3d.get_tk_widget().pack(fill='both', expand=True)
         self.ax_3d_surface = self.fig_3d.add_subplot(221, projection='3d')
